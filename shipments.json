@@ -1,0 +1,64 @@
+{
+  "EGYUAE-1001": {
+    "routeEn": "Alexandria Seaport (EG) ➔ Jebel Ali, Dubai (UAE)",
+    "routeAr": "ميناء الإسكندرية (مصر) ➔ ميناء جبل علي، دبي (الإمارات)",
+    "etaEn": "Aug 29, 2026",
+    "etaAr": "29 أغسطس 2026",
+    "statusEn": "In Transit (Ocean)",
+    "statusAr": "قيد النقل البحري",
+    "steps": [
+      {
+        "titleEn": "Ocean Liner Departure",
+        "titleAr": "مغادرة السفينة الحاملة للميناء",
+        "date": "Aug 22, 2026",
+        "descEn": "Container vessel left Alexandria terminal under cargo manifest #9204.",
+        "descAr": "غادرت السفينة الحاملة للحاوية رصيف ميناء الإسكندرية متجهة نحو جبل علي."
+      },
+      {
+        "titleEn": "Customs Export Release Approved",
+        "titleAr": "صدور إذن الفسح الجمركي للتصدير",
+        "date": "Aug 20, 2026",
+        "descEn": "Approved by customs inspection gate after terminal security review.",
+        "descAr": "تم فحص الشحنة وإتمام التخليص النهائي بنجاح من جمارك ميناء الإسكندرية."
+      },
+      {
+        "titleEn": "Cargo Consolidation Completed",
+        "titleAr": "استلام الطرود وتعبئة الحاوية",
+        "date": "Aug 18, 2026",
+        "descEn": "Received and loaded safely at Al Massriya Al Emaratiya Egypt consolidation terminal.",
+        "descAr": "استلام البضائع بالكامل وفحصها وتعبئتها داخل الحاوية في مستودعاتنا بالقاهرة."
+      }
+    ]
+  },
+  "EGYUAE-1002": {
+    "routeEn": "Sharjah Airport (SHJ) ➔ Cairo International Airport (CAI)",
+    "routeAr": "مطار الشارقة للشحن (الإمارات) ➔ مطار القاهرة الدولي (مصر)",
+    "etaEn": "Completed & Cleared",
+    "etaAr": "مكتملة ومستلمة بالكامل",
+    "statusEn": "Delivered",
+    "statusAr": "تم التوصيل بنجاح",
+    "steps": [
+      {
+        "titleEn": "Final Safe Delivery to Consignee",
+        "titleAr": "التسليم النهائي المستودعات العميل",
+        "date": "Aug 16, 2026",
+        "descEn": "Received secure and complete with signed proof of delivery.",
+        "descAr": "تم تسليم البضائع بالكامل وتوقيع سند الاستلام النهائي بمقر العميل بالقاهرة."
+      },
+      {
+        "titleEn": "Import Customs Release Approved",
+        "titleAr": "إتمام التخليص الجمركي بمصر",
+        "date": "Aug 15, 2026",
+        "descEn": "Cleared and verified at Cairo Airport customs clearance cargo desk.",
+        "descAr": "إنجاز الفحص والمطابقة وسداد الرسوم الجمركية بمطار القاهرة الدولي."
+      },
+      {
+        "titleEn": "Aircraft Discharged",
+        "titleAr": "وصول رحلة الشحن الجوي وتفريغ البضائع",
+        "date": "Aug 13, 2026",
+        "descEn": "Air freight flight landed and safely offloaded to Terminal Hub.",
+        "descAr": "هبوط الطائرة بأمان وتفريغ منصات الشحن في مخازن الترانزيت."
+      }
+    ]
+  }
+}
