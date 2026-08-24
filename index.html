@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Al Massriya Al Emaratiya | Cargo & Customs Portal</title>
+    <meta name="description" content="Integrated Cargo, Freight forwarding and customs clearance gateway connecting Egypt and UAE with real-time tracking solutions." />
+    
+    <!-- Google Tag Manager (Same as Main Site) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B4D213Y8RJ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-B4D213Y8RJ');
+    </script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&family=Cairo:wght@600;700;900&family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Links to your main stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Tech UI Background Utilities -->
+    <div id="tech-cursor"></div>
+    <div id="tech-cursor-follower"></div>
+    <div id="progress-bar"></div>
+    <div class="animated-lines-container"></div>
+
+    <!-- Header Block -->
+    <header class="tech-header" id="header">
+        <div class="header-top-bar">
+            <div class="container top-bar-container">
+                <div class="top-bar-left">
+                    <span><i class="fas fa-ship"></i> <span data-en="EG-UAE Logistics Desk" data-ar="مركز العمليات اللوجستية مصر - الإمارات">EG-UAE Logistics Desk</span></span>
+                </div>
+                <div class="top-bar-right">
+                    <a href="https://www.egy-uae.com" target="_self" data-en="Main Trade Portal" data-ar="بوابة التجارة الرئيسية">Main Trade Portal</a>
+                    <a href="#shipper-tools" data-en="Cubic Tool" data-ar="حاسبة الأحجام">Cubic Tool</a>
+                    <a href="#contact" data-en="Help Center" data-ar="الدعم والمساعدة">Help Center</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="Al_Masriya_Al_Emaratiya_icon.png" class="brand-logo" alt="Al Massriya Al Emaratiya" onerror="this.onerror=null; this.src='https://via.placeholder.com/200x60/044da1/ffffff?text=LOGO+HERE';">
+                </a>
+            </div>
+            
+            <!-- Tracking Bar directly embedded inside Header for high conversions -->
+            <div class="header-search-bar">
+                <div class="search-form-wrapper">
+                    <div class="search-form">
+                        <div class="search-category-select">
+                            <span data-en="Cargo Tracker" data-ar="تتبع الشحنات">Cargo Tracker</span>
+                        </div>
+                        <input type="text" placeholder="EGYUAE-1001..." id="header-track-input" autocomplete="off">
+                        <button type="button" class="search-btn" onclick="triggerMainTracking('header-track-input')">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="header-actions">
+                <a href="https://www.egy-uae.com" target="_self" class="btn btn-outline-tech">
+                    <i class="fas fa-home"></i> <span data-en="Main Website" data-ar="الموقع الرئيسي">Main Website</span>
+                </a>
+                <div class="hamburger">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cargo Specific Navigation Bar -->
+        <nav class="desktop-nav">
+            <div class="container nav-container">
+                <div class="nav-left">
+                    <div class="all-categories-trigger">
+                        <i class="fas fa-shield-alt"></i> <span data-en="Verified Carrier Operations" data-ar="عمليات النقل المعتمدة">Verified Carrier Operations</span>
+                    </div>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home" class="active" data-en="Logistics Home" data-ar="لوحة الشحن الرئيسية">Logistics Home</a></li>
+                    <li><a href="#services" data-en="Transit Modes" data-ar="خطوط النقل">Transit Modes</a></li>
+                    <li><a href="#tracking-console" data-en="Tracking Console" data-ar="بوابة التتبع المباشر">Live Tracker</a></li>
+                    <li><a href="#shipper-tools" data-en="Volumetric Calculator" data-ar="الحاسبة الحجمية">Volumetric Calc</a></li>
+                    <li><a href="#contact" data-en="RFQ Cargo Desk" data-ar="طلب تسعير شحنة">Cargo RFQ</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav glass-panel">
+        <ul class="mobile-links">
+            <li><a href="#home" data-en="Logistics Home" data-ar="لوحة الشحن الرئيسية">Logistics Home</a></li>
+            <li><a href="#services" data-en="Transit Modes" data-ar="خطوط النقل">Transit Modes</a></li>
+            <li><a href="#tracking-console" data-en="Live Tracker" data-ar="بوابة التتبع المباشر">Live Tracker</a></li>
+            <li><a href="#shipper-tools" data-en="Volumetric Calculator" data-ar="الحاسبة الحجمية">Volumetric Calc</a></li>
+            <li><a href="#contact" data-en="RFQ Cargo Desk" data-ar="طلب تسعير شحنة">Cargo RFQ</a></li>
+            <li>
+                <a href="https://www.egy-uae.com" class="btn btn-tech w-full mt-4"><i class="fas fa-home"></i> <span data-en="Main Site" data-ar="الموقع الرئيسي">Main Site</span></a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Immersive Cinematic Hero Section -->
+    <section class="immersive-hero" id="home">
+        <div class="immersive-hero-media">
+            <!-- Smooth high-quality loading fallback background -->
+            <img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=1920&q=80" alt="Cargo Corridor" style="width:100%; height:100%; object-fit:cover; filter: brightness(0.25) contrast(1.15);">
+        </div>
+        <div class="immersive-hero-overlay"></div>
+
+        <div class="immersive-hero-content" data-aos="fade-up">
+            <div class="tech-badge"><i class="fas fa-truck-ramp-box"></i> <span data-en="Operational Gateway" data-ar="المنفذ الجمركي المشترك بمصر والإمارات">Operational Gateway</span></div>
+            <h1 data-en="Smart Transits & <br><span class='gradient-text'>Global Freight</span>" data-ar="عمليات شحن ذكية <br><span class='gradient-text'>وتخليص جمركي آمن</span>">Smart Transits & <br><span class="gradient-text">Global Freight</span></h1>
+            <p data-en="We bring complete transparency to your supply chain between Egypt and the UAE. Track marine freight, dispatch schedules, custom release permits, and inland container lines instantly." data-ar="نوفر الشفافية المطلقة لإمدادات بضائعكم بين جمهورية مصر العربية ودولة الإمارات العربية المتحدة. تابع مسار الحاوية، توقيتات الشحن الجوي، وأذون التخليص الجمركي في منصة مركزية واحدة.">We bring complete transparency to your supply chain between Egypt and the UAE.</p>
+            <div class="hero-actions-container">
+                <a href="#tracking-console" class="btn btn-tech" data-en="Access Tracking Portal" data-ar="الدخول لبوابة التتبع">Access Tracking Portal</a>
+                <a href="#shipper-tools" class="btn btn-outline-tech" style="color:white;" data-en="Run Volume Calculator" data-ar="تشغيل حاسبة الأوزان">Run Volume Calculator</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Infinite Marquee Ticker -->
+    <div class="marquee-ticker">
+        <div class="marquee-content">
+            <span>PORT SAID EXPRESS</span> • <span>JEBEL ALI DISTRIBUTION</span> • <span>CAIRO AIRPORT SECURE DEPOT</span> • <span>EXPERT CUSTOMS BROKERAGE</span> • <span>REEFER CARGO SYSTEMS</span> • <span>DAMIETTA MULTIMODAL ROUTING</span> • <span>ALEXANDRIA SEAPORT DEPLOYMENT</span>
+        </div>
+    </div>
+
+    <!-- Live Real-Time Tracking Portal -->
+    <section id="tracking-console" class="section dark-tech-section">
+        <div class="container relative-z">
+            <div class="section-header text-center" data-aos="fade-up">
+                <h2 data-en="Unified Cargo Tracking Terminal" data-ar="محطة تتبع شحنات الحاويات والمجموعات">Unified Cargo Tracking Terminal</h2>
+                <p class="subtitle-text" data-en="Direct live data linkage to customs release databases and dispatch manifests" data-ar="ربط مباشر وآمن بقواعد بيانات التخليص الجمركي وبيانات الشحن الفعلي">Direct live data linkage to customs release databases and dispatch manifests</p>
+                <div class="header-line glow-line"></div>
+            </div>
+
+            <div class="grid grid-2">
+                <!-- Query Station Card -->
+                <div class="system-card glass-panel" data-aos="fade-right">
+                    <div class="sys-icon"><i class="fas fa-satellite-dish"></i></div>
+                    <h3 data-en="Carrier Search Station" data-ar="مركز الاستعلام الجمركي للشحنات">Carrier Search Station</h3>
+                    <p class="text-muted" style="font-size:0.9rem; margin-bottom: 20px;" data-en="Provide your customized carrier reference code below to pull real-time telemetry." data-ar="يرجى إدخال كود الشحن الصادر من مكاتبنا للاستعلام الفوري المباشر عن حالة الإرسال الجمركي واللوجستي.">Provide your customized carrier reference code below to pull real-time telemetry.</p>
+                    
+                    <div class="input-group">
+                        <i class="fas fa-barcode"></i>
+                        <input type="text" id="main-console-input" placeholder="e.g., EGYUAE-1001" style="width: 100%;" />
+                    </div>
+                    
+                    <button type="button" class="btn btn-tech w-full" onclick="triggerMainTracking('main-console-input')" data-en="Initialize Tracking Search" data-ar="بدء الاتصال وقراءة البيانات">Initialize Tracking Search</button>
+                    
+                    <div style="margin-top:15px; font-size:0.8rem; color:var(--text-muted);">
+                        <span data-en="Demo Tracking IDs: <strong>EGYUAE-1001</strong>, <strong>EGYUAE-1002</strong>" data-ar="أكواد تجريبية حية: <strong>EGYUAE-1001</strong>, <strong>EGYUAE-1002</strong>">Demo Tracking IDs: <strong>EGYUAE-1001</strong>, <strong>EGYUAE-1002</strong></span>
+                    </div>
+                </div>
+
+                <!-- Live Results Console panel -->
+                <div class="system-card glass-panel" id="tracking-response-card" style="display:none; border-left:3px solid var(--accent);" data-aos="fade-left">
+                    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px;">
+                        <h3 id="resp-cargo-id">EGYUAE-1001</h3>
+                        <span class="badge-status" id="resp-status" style="position:static;">In Transit</span>
+                    </div>
+                    <div id="resp-metadata" class="text-muted" style="font-size:0.9rem; margin-bottom:15px;">
+                        <!-- Decoded Info will render dynamically here -->
+                    </div>
+                    <div class="faq-container" id="resp-timeline">
+                        <!-- Dynamic chronological timeline steps -->
+                    </div>
+                </div>
+
+                <!-- Idle Default display box -->
+                <div class="system-card glass-panel" id="tracking-idle-card" style="display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center;" data-aos="fade-left">
+                    <i class="fas fa-qrcode" style="font-size: 3.5rem; color: var(--border-hover); margin-bottom: 20px;"></i>
+                    <h3 data-en="Console Feed Offline" data-ar="نظام التتبع في انتظار إشارة البحث">Console Feed Offline</h3>
+                    <p class="text-muted" style="font-size:0.9rem;" data-en="Telemetry panel is locked. Complete validation above to securely authenticate and view live manifest history." data-ar="بوابة القراءة مغلقة مؤقتاً، الرجاء كتابة الرمز والبحث للبدء الفوري في الاتصال وتتبع مسار الحاوية.">Telemetry panel is locked. Complete validation above.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Logistics Capability Grid -->
+    <section id="services" class="section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 data-en="Transit Modes & Trade Channels" data-ar="خدمات الشحن والترانزيت">Transit Modes & Trade Channels</h2>
+                <p class="subtitle-text" data-en="Robust freight routes maintaining supply chain stability" data-ar="خطوط وسعة شحن مستمرة تدعم تدفق البضائع دون توقف">Robust freight routes maintaining supply chain stability</p>
+                <div class="header-line"></div>
+            </div>
+            
+            <div class="grid grid-3">
+                <div class="tech-card service-image-card" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=600&q=80" alt="Full Container Seafreight" class="card-bg-img">
+                    <div class="card-content-overlay">
+                        <div class="icon-box"><i class="fas fa-ship"></i></div>
+                        <h3 data-en="Ocean Freight (FCL/LCL)" data-ar="الشحن البحري الحاويات الكاملة والمشتركة">Ocean Freight (FCL/LCL)</h3>
+                        <p data-en="Direct routes connecting Damietta, Alexandria, and Port Said to Jebel Ali and Khalifa Ports with highly optimized freight plans." data-ar="تأمين شحن الحاويات الكاملة أو البضائع المشتركة من الموانئ المصرية لموانئ جبل علي وأبوظبي.">Direct routes connecting EG to UAE with highly optimized freight plans.</p>
+                    </div>
+                </div>
+
+                <div class="tech-card service-image-card" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=600&q=80" alt="Dedicated Air Freight" class="card-bg-img">
+                    <div class="card-content-overlay">
+                        <div class="icon-box"><i class="fas fa-plane"></i></div>
+                        <h3 data-en="Express Air Cargo" data-ar="الشحن الجوي السريع">Express Air Cargo</h3>
+                        <p data-en="Prioritized airline allotment from Cairo Airport (CAI) directly to Dubai and Abu Dhabi hubs, customized for high-value merchandise." data-ar="حجز فراغات شحن جوبية بأولوية قصوى من مطار القاهرة إلى دبي لنقل السلع الحساسة والمستعجلة.">Prioritized airline allotment for high-value cargo.</p>
+                    </div>
+                </div>
+
+                <div class="tech-card service-image-card" data-aos="fade-up" data-aos-delay="300">
+                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=600&q=80" alt="Customs Brokerage Division" class="card-bg-img">
+                    <div class="card-content-overlay">
+                        <div class="icon-box"><i class="fas fa-file-invoice-dollar"></i></div>
+                        <h3 data-en="Customs Legal Clearance" data-ar="تخليص جمركي معتمد واحترافي">Customs Legal Clearance</h3>
+                        <p data-en="On-ground custom broker teams at Alexandria, Cairo, and Dubai ports overseeing compliance, tariffs and immediate release." data-ar="طواقم قانونية وإجرائية متخصصة للتخليص الفوري على البضائع وسداد الرسوم وإصدار أذونات الفسح.">On-ground custom broker teams at major ports overseeing legal customs release.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advanced Shipper Utilities Section -->
+    <section id="shipper-tools" class="section glass-section">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <h2 data-en="Volumetric Dimensional & RFQ Calculator" data-ar="الأدوات الذكية لتسعير الشحن">Volumetric Dimensional & RFQ Calculator</h2>
+                <div class="header-line glow-line"></div>
+            </div>
+
+            <div class="grid grid-2">
+                <!-- Volumetric Cubic Weight Calculator -->
+                <div class="contact-form-container tech-card" data-aos="fade-right">
+                    <h3 class="form-title" style="display:flex; align-items:center; gap:10px;">
+                        <i class="fas fa-calculator" style="color:var(--accent);"></i>
+                        <span data-en="Air Freight Density Tool" data-ar="حاسبة الكثافة والوزن الحجمي">Air Freight Density Tool</span>
+                    </h3>
+                    <p class="text-muted mb-4" data-en="Compute dimensional weight against actual weight to obtain billable cargo specs." data-ar="قم بوزن وحساب الطرد جمركياً ومعرفة الوزن الفعلي المعتمد الذي سيتم احتسابه مالياً قبل الإرسال.">Compute dimensional weight against actual weight.</p>
+                    
+                    <form onsubmit="handleCubicCalculation(event)">
+                        <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap:12px; margin-bottom:15px;">
+                            <div class="input-group" style="margin-bottom:0;">
+                                <input type="number" id="dim-l" placeholder="Length (cm)" required min="1" style="padding-left:15px;">
+                            </div>
+                            <div class="input-group" style="margin-bottom:0;">
+                                <input type="number" id="dim-w" placeholder="Width (cm)" required min="1" style="padding-left:15px;">
+                            </div>
+                            <div class="input-group" style="margin-bottom:0;">
+                                <input type="number" id="dim-h" placeholder="Height (cm)" required min="1" style="padding-left:15px;">
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <i class="fas fa-weight-hanging"></i>
+                            <input type="number" id="dim-actual" placeholder="Physical Scale Weight (kg)" required min="1">
+                        </div>
+                        <button type="submit" class="btn btn-tech w-full" data-en="Process Cubic Dimensions" data-ar="بدء احتساب الوزن الحجمي">Process Cubic Dimensions</button>
+                    </form>
+                    
+                    <div id="calc-result-panel" class="system-card glass-panel" style="display:none; margin-top:20px; padding:15px;"></div>
+                </div>
+
+                <!-- Cargo Request for Quote Panel -->
+                <div class="contact-form-container tech-card" id="rfq-wrapper" data-aos="fade-left">
+                    <h3 class="form-title" style="display:flex; align-items:center; gap:10px;">
+                        <i class="fas fa-paper-plane" style="color:var(--primary);"></i>
+                        <span data-en="Submit Logistics Specs (RFQ)" data-ar="إرسال مواصفات الشحنة لطلب تسعير">Submit Logistics Specs (RFQ)</span>
+                    </h3>
+                    <p class="text-muted mb-4" data-en="Forward cargo sizes and route options directly to our pricing specialists." data-ar="أرسل مواصفات وأبعاد حاوياتك أو بضائعك لخدمة المبيعات للحصول على أفضل سعر متاح.">Forward cargo sizes and route options directly to our pricing specialists.</p>
+                    
+                    <!-- Direct Formspree Link mapped from Main Site configuration -->
+                    <form class="contact-form" action="https://formspree.io/f/maqkrwoe" method="POST" id="cargo-rfq-form">
+                        <div class="input-group">
+                            <i class="fas fa-user"></i>
+                            <input type="text" name="Procurement_Manager" placeholder="Name / Contact Person" required>
+                        </div>
+                        <div class="input-group">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" name="Email" placeholder="Official Email Address" required>
+                        </div>
+                        <div class="input-group">
+                            <i class="fas fa-route"></i>
+                            <input type="text" name="Route_Manifest" placeholder="Desired Route (e.g., Cairo - Jebel Ali)" required>
+                        </div>
+                        <div class="input-group">
+                            <i class="fas fa-cubes"></i>
+                            <input type="text" name="Payload" placeholder="Cargo Type & Weight (e.g., Furniture, 5 Tons)" required>
+                        </div>
+                        <div class="input-group">
+                            <i class="fas fa-comment-dots"></i>
+                            <textarea name="Instructions" rows="3" placeholder="Port terminal preference, customs assistance requests..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-tech w-full">Transmit Cargo Specs <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section dark-tech-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 data-en="Logistics Operations Center FAQ" data-ar="أجوبة مكاتب عمليات الشحن والتخليص">Logistics Operations Center FAQ</h2>
+                <div class="header-line"></div>
+            </div>
+            <div class="faq-container" style="max-width:800px; margin: 0 auto;" data-aos="fade-up">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 data-en="How frequently does the GPS telemetry database refresh?" data-ar="ما هي مدة تحديث ومزامنة حالة الشحنة عبر الويب؟">How frequently does the GPS telemetry database refresh?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-en="Customs release status and warehouse logs sync instantaneously upon barcode scan. Ocean tracking maps refresh daily according to maritime carrier data." data-ar="تتم مزامنة وتحديث مسار الشحنات بشكل فوري وتلقائي بمجرد مسح الباركود في المستودعات أو الموانئ أو الحصول على إفراج جمركي جديد.">Customs release status and warehouse logs sync instantaneously upon barcode scan.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3 data-en="Do you provide commercial agency services along with custom clearance?" data-ar="هل توفر الشركة توثيقات التوكيل والوكالة التجارية المصاحبة للتخليص؟">Do you provide commercial agency services along with custom clearance?</h3>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-en="Yes, Al Massriya Al Emaratiya operates as a registered commercial agent. We possess legal channels to issue official trade permits, legal representation, and coordinate import compliance for various products." data-ar="نعم بالكامل، المصرية الإماراتية هي وكيل تجاري مرخص ومسجل. نمتلك الصلاحيات القانونية لاستصدار شهادات الاستيراد والتمثيل التجاري للمؤسسات غير الحاصلة على رخص في بلد المقصد.">Yes, Al Massriya Al Emaratiya operates as a registered commercial agent.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Area (Same look but pointing to Logistics) -->
+    <footer class="tech-footer">
+        <div class="container footer-container-grid">
+            <div class="footer-brand-section">
+                <img src="Al_Masriya_Al_Emaratiya_icon.png" alt="Al Massriya Al Emaratiya Logo" class="brand-logo" onerror="this.onerror=null; this.src='https://via.placeholder.com/200x60/044da1/ffffff?text=LOGO+HERE';">
+                <p class="footer-desc">Professional Supply Chain & Custom Management Hub. Supporting trade security over the Egypt-UAE Corridor.</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/AlMasriyaAlEmaratiya" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/company/egy-uae" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.youtube.com/@egy-uae.channel" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links-group">
+                <h4 class="footer-section-title">Logistics Nodes</h4>
+                <ul class="footer-ul-list">
+                    <li><a href="#home">Terminal Hub</a></li>
+                    <li><a href="#services">Ocean & Air Capacity</a></li>
+                    <li><a href="#tracking-console">Online Cargo Tracker</a></li>
+                    <li><a href="#shipper-tools">Volume Computation</a></li>
+                    <li><a href="https://www.egy-uae.com">B2B Trade Portal</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links-group">
+                <h4 class="footer-section-title">Support Hub</h4>
+                <div class="contact-info" style="font-size:0.85rem; color:var(--text-muted);">
+                    <p style="margin-bottom:8px;"><i class="fas fa-map-marker-alt" style="color:var(--accent);"></i> Egypt: 10th of Ramadan | UAE: Sharjah</p>
+                    <p style="margin-bottom:8px;"><i class="fas fa-phone-alt" style="color:var(--accent);"></i> +20 101 176 6232</p>
+                    <p><i class="fas fa-envelope" style="color:var(--accent);"></i> info@egy-uae.com</p>
+                </div>
+            </div>
+
+            <div class="footer-links-group footer-lang-wrap">
+                <h4 class="footer-section-title">Language Selector</h4>
+                <div class="footer-language custom-dropdown">
+                    <div class="dropdown-trigger" id="lang-trigger">
+                        <span><i class="fas fa-globe"></i> English</span>
+                        <i class="fas fa-chevron-down arrow-icon"></i>
+                    </div>
+                    <ul class="dropdown-menu tech-dropdown" id="lang-menu">
+                        <li><a href="javascript:void(0)" onclick="setSystemLanguage('en')" class="active-lang" id="btn-en">English</a></li>
+                        <li><a href="javascript:void(0)" onclick="setSystemLanguage('ar')" id="btn-ar">العربية</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom-panel">
+            <p>© 2026 Al Massriya Al Emaratiya. Cargo Deployment Platform. All trade lanes verified. Powered by Tech OS.</p>
+        </div>
+    </footer>
+
+    <!-- AI Chat Support Widget (Same design as Main Site) -->
+    <div id="chat-widget" class="chat-widget">
+        <button class="chat-btn glow-effect" id="chat-toggle" aria-label="Toggle Support Chat">
+            <i class="fas fa-headset"></i> 
+        </button>
+        <div class="chat-container glass-panel" id="chat-box">
+            <div class="chat-header">
+                <h3><i class="fas fa-robot"></i> Cargo Support Node</h3>
+                <button class="chat-close" id="chat-close">&times;</button>
+            </div>
+            <div class="chat-body" id="chat-body">
+                <div class="message incoming">
+                    <p>Secure link established. Ask about shipping quotes, custom updates, or cargo status.</p>
+                </div>
+            </div>
+            <div class="chat-footer">
+                <input type="text" placeholder="Type cargo tracking query..." id="chat-input">
+                <button id="chat-send" aria-label="Send Message"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Libraries linked identically as Main Site -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
